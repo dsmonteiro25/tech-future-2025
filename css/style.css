@@ -3,22 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #0f0f1a;
     color: #ffffff;
 }
 
-/* Header */
 header {
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 0;
     background-color: #1c1c2b;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
-  }
+}
 
 header .container {
     max-width: 1200px;
@@ -30,40 +30,37 @@ header .container {
 }
 
 .logo img {
-    height: 60px;
-  }
+    height: 40px;
+}
 
-/* Menu */
 .menu ul {
     list-style: none;
     display: flex;
     gap: 30px;
-  }
+}
 
-  .menu a {
+.menu a {
     text-decoration: none;
     color: #ffffff;
     font-weight: 500;
     transition: color 0.3s;
-  }
-  
-  .menu a:hover {
-    color: #1E90FF; /* azul neon */
-  }
+}
 
-  /* Espaço para o conteúdo não ficar escondido atrás do header fixo */
+.menu a:hover {
+    color: #1E90FF;
+}
+
 body::before {
     content: "";
     display: block;
-    height: 90px; /* altura do header + margem */
-  }
+    height: 60px;
+}
 
-/* Hero Section */
 #hero {
-    background-image: url('/assets/background-gif-1.gif'); /* Caminho para o GIF */
-    background-size: cover; /* Faz o GIF cobrir toda a área */
-    background-position: center; /* Centraliza o GIF */
-    background-repeat: no-repeat; /* Evita repetição do GIF */
+    background-image: url('/assets/background-gif-1.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -80,25 +77,24 @@ body::before {
     margin: 0 auto;
 }
 
-/* Corrigindo a classe para .hero-container */
 .hero-container {
     display: flex;
-    flex-direction: column; /* Garante que os elementos fiquem em coluna */
-    align-items: center; /* Centraliza horizontalmente */
-    gap: 20px; /* Adiciona espaço entre os elementos */
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .hero-container h1 {
     font-weight: bold;
     font-size: 5rem;
     font-weight: 700;
-    margin-bottom: 10px; /* Ajusta a margem inferior do título */
+    margin-bottom: 10px;
 }
 
 .hero-container p {
     font-weight: bold;
     font-size: 3rem;
-    margin-bottom: 20px; /* Garante que o parágrafo tenha espaço antes do botão */
+    margin-bottom: 20px;
 }
 
 .btn-primary {
@@ -118,9 +114,8 @@ body::before {
     color: #ffffff;
 }
 
-/* About Section */
 #about {
-    background-color: #0f0f1a; /* Fundo escuro */
+    background-color: #0f0f1a;
     padding: 80px 20px;
     color: #ffffff;
     text-align: center;
@@ -139,6 +134,7 @@ body::before {
     z-index: 0;
     opacity: 0.5;
 }
+
 #about .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -148,7 +144,7 @@ body::before {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 20px;
-    color: #1E90FF; /* Azul neon para o título */
+    color: #1E90FF;
 }
 
 #about p{
@@ -159,7 +155,7 @@ body::before {
     font-size: 1.5rem;
     line-height: 1.6;
     margin-bottom: 40px;
-    color: #cccccc; /* Cinza claro para contraste */
+    color: #cccccc;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -169,20 +165,20 @@ body::before {
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    flex-wrap: wrap; /* Para responsividade */
+    flex-wrap: wrap;
 }
 
 .about-item {
     flex: 1;
-    min-width: 250px; /* Garante que os itens não fiquem muito estreitos */
-    background-color: #1c1c2b; /* Fundo escuro para os cards */
+    min-width: 250px;
+    background-color: #1c1c2b;
     padding: 20px;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
 
 .about-item:hover {
-    transform: translateY(-10px); /* Efeito de elevação ao passar o mouse */
+    transform: translateY(-10px);
 }
 
 .about-item h3 {
@@ -197,9 +193,8 @@ body::before {
     color: #cccccc;
 }
 
-/* Agenda Section */
 #agenda {
-    background-color: #0f0f1a; /* Fundo escuro */
+    background-color: #0f0f1a;
     padding: 80px 20px;
     color: #ffffff;
     text-align: center;
@@ -207,7 +202,6 @@ body::before {
     overflow: hidden;
 }
 
-/* Efeito de fundo sutil */
 #agenda::before {
     content: '';
     position: absolute;
@@ -246,11 +240,10 @@ body::before {
 
 .agenda-content {
     position: relative;
-    max-width: 600px; /* Centraliza a linha do tempo */
+    max-width: 600px;
     margin: 0 auto;
 }
 
-/* Linha vertical da timeline */
 .agenda-content::before {
     content: '';
     position: absolute;
@@ -258,7 +251,7 @@ body::before {
     transform: translateX(-50%);
     width: 2px;
     height: 100%;
-    background: linear-gradient(to bottom, #1E90FF, #6A0DAD); /* Gradiente neon */
+    background: linear-gradient(to bottom, #1E90FF, #6A0DAD);
     z-index: 0;
 }
 
@@ -271,7 +264,6 @@ body::before {
     z-index: 1;
 }
 
-/* Estilização do horário */
 .agenda-time {
     width: 40%;
     font-size: 1.4rem;
@@ -282,7 +274,6 @@ body::before {
     position: relative;
 }
 
-/* Ponto na linha do tempo */
 .agenda-time::after {
     content: '';
     position: absolute;
@@ -297,7 +288,6 @@ body::before {
     z-index: 1;
 }
 
-/* Detalhes do evento */
 .agenda-details {
     width: 80%;
     background-color: rgba(28, 28, 43, 0.8);
@@ -325,7 +315,6 @@ body::before {
     color: #e0e0e0;
 }
 
-/* Alternar os lados dos itens para um efeito de zig-zag */
 .agenda-item:nth-child(even) {
     flex-direction: row-reverse;
 }
@@ -349,7 +338,6 @@ body::before {
     transform: translateX(-10px);
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     #agenda {
         padding: 50px 15px;
@@ -406,9 +394,8 @@ body::before {
     }
 }
 
-/* Inscrição Section */
 #inscricao {
-    background-color: #0f0f1a; /* Fundo escuro */
+    background-color: #0f0f1a;
     padding: 80px 20px;
     color: #ffffff;
     text-align: center;
@@ -416,7 +403,6 @@ body::before {
     overflow: hidden;
 }
 
-/* Efeito de fundo sutil */
 #inscricao::before {
     content: '';
     position: absolute;
@@ -441,7 +427,6 @@ body::before {
     font-weight: 700;
     margin-bottom: 20px;
     color: #1E90FF;
-
 }
 
 #inscricao .lead {
@@ -457,14 +442,14 @@ body::before {
 .inscricao-content {
     max-width: 500px;
     margin: 0 auto;
-    position: relative; /* Adiciona posicionamento relativo */
-    z-index: 10; /* Aumenta o z-index para garantir que o formulário esteja acima de outros elementos */
+    position: relative;
+    z-index: 10;
 }
 
 #inscricao-form {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Espaçamento entre os campos */
+    gap: 20px;
 }
 
 .form-group {
@@ -476,7 +461,7 @@ body::before {
 .form-group label {
     font-size: 1.1rem;
     margin-bottom: 8px;
-    color: #1E90FF; /* Azul neon */
+    color: #1E90FF;
 }
 
 .form-group input {
@@ -499,7 +484,6 @@ body::before {
     color: #999999;
 }
 
-/* Reutilizando o botão estilizado do hero */
 .btn-primary {
     background-color: #ffffff;
     color: #1E90FF;
@@ -518,7 +502,6 @@ body::before {
     color: #ffffff;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     #inscricao {
         padding: 50px 15px;
@@ -543,16 +526,14 @@ body::before {
     }
 }
 
-/* Footer */
 footer {
-    background-color: #0f0f1a; /* Fundo escuro */
+    background-color: #0f0f1a;
     padding: 40px 20px;
     color: #ffffff;
     position: relative;
     overflow: hidden;
 }
 
-/* Efeito de fundo sutil */
 footer::before {
     content: '';
     position: absolute;
@@ -590,7 +571,7 @@ footer .container {
 .footer-info h3, .footer-social h3 {
     font-size: 1.5rem;
     margin-bottom: 15px;
-    color: #1E90FF; /* Azul neon */
+    color: #1E90FF;
 }
 
 .footer-info p {
@@ -612,8 +593,8 @@ footer .container {
 }
 
 .social-links a:hover {
-    color: #6A0DAD; /* Roxo neon */
-    transform: scale(1.2); /* Efeito de zoom */
+    color: #6A0DAD;
+    transform: scale(1.2);
     text-shadow: 0 0 10px rgba(106, 13, 173, 0.8);
 }
 
@@ -628,7 +609,6 @@ footer .container {
     color: #999999;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     footer {
         padding: 30px 15px;
@@ -649,7 +629,6 @@ footer .container {
     }
 }
 
-/*Voltar ao topo*/
 #back-to-top {
     position: fixed;
     bottom: 30px;
@@ -665,7 +644,7 @@ footer .container {
     justify-content: center;
     font-size: 1.5rem;
     cursor: pointer;
-    opacity: 0; /* Inicialmente invisível */
+    opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
     z-index: 1000;
@@ -673,7 +652,7 @@ footer .container {
 }
 
 #back-to-top:hover {
-    background-color: #6A0DAD; /* Roxo neon */
+    background-color: #6A0DAD;
     transform: scale(1.1);
     box-shadow: 0 0 15px rgba(106, 13, 173, 0.8);
 }
