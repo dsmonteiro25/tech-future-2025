@@ -57,7 +57,7 @@ body::before {
 }
 
 #hero {
-    background-image: url('/assets/background-gif-1.gif');
+    background-image: url('assets/background-gif-1.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
